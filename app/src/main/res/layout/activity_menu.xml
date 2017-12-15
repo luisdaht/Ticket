@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sergio.ticked.Menu"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/alumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="46dp"
+        android:onClick="lanzarAL"
+        android:text="Alumno"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="HardcodedText,MissingConstraints,OnClick,RtlCompat" />
+
+    <Button
+        android:id="@+id/ticked"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="51dp"
+        android:onClick="lanzarPro"
+        android:text="Progama Profesional"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alumno"
+        tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,NotSibling,RtlCompat" />
+
+    <Button
+        android:id="@+id/ticked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:onClick="lanzarTic"
+        android:text="Ticked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/alumno"
+        app:layout_constraintStart_toStartOf="@+id/alumno"
+        tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="Menu de Entrega de Ticked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
